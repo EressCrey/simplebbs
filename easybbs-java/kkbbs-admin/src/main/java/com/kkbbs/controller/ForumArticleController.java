@@ -129,7 +129,7 @@ public class ForumArticleController extends BaseController {
 
     /**
      * @Description: 文章置顶
-     * @auther: 程序员老罗
+     * @auther: lonelykkk
      * @date: 2023/1/10
      * @param: [topType, articleId]
      * @return: com.kkbbs.entity.vo.ResponseVO
@@ -145,7 +145,7 @@ public class ForumArticleController extends BaseController {
 
     /**
      * @Description: 审核文章
-     * @auther: 程序员老罗
+     * @auther: lonelykkk
      * @date: 2023/1/10
      * @param: [articleId]
      * @return: com.kkbbs.entity.vo.ResponseVO
@@ -159,7 +159,7 @@ public class ForumArticleController extends BaseController {
 
     /**
      * @Description: 获取所有评论
-     * @auther: 程序员老罗
+     * @auther: lonelykkk
      * @date: 2023/1/10
      * @param: [commentQuery]
      * @return: com.kkbbs.entity.vo.ResponseVO
@@ -174,7 +174,7 @@ public class ForumArticleController extends BaseController {
 
     /**
      * @Description: 获取文章评论
-     * @auther: 程序员老罗
+     * @auther: lonelykkk
      * @date: 2023/1/10
      * @param: [commentQuery]
      * @return: com.kkbbs.entity.vo.ResponseVO
@@ -191,7 +191,7 @@ public class ForumArticleController extends BaseController {
 
     /**
      * @Description: 删除评论
-     * @auther: 程序员老罗
+     * @auther: lonelykkk
      * @date: 2023/1/10
      * @param: [articleId, commentId]
      * @return: com.kkbbs.entity.vo.ResponseVO
@@ -205,7 +205,7 @@ public class ForumArticleController extends BaseController {
 
     /**
      * @Description: 审核评论
-     * @auther: 程序员老罗
+     * @auther: lonelykkk
      * @date: 2023/1/10
      * @param: [articleId, commentId]
      * @return: com.kkbbs.entity.vo.ResponseVO
