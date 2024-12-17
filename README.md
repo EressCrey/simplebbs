@@ -13,7 +13,8 @@
 
 **客户端界面演示**
 
-![image](https://github.com/user-attachments/assets/dceeb9e8-ffef-4ac6-8a38-11a86b498ed7)
+![image](https://github.com/user-attachments/assets/44c31f7a-4bb9-403a-bbc7-338dcd5b5f60)
+
 
 
 **功能导图**
