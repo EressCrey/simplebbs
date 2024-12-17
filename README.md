@@ -1,6 +1,7 @@
 # kkbbs
 
 基于springboot+vue的学习资源分享平台(多人论坛/博客)
+
 又名**知享乐园**
 ## 客户端体验地址
 
@@ -9,7 +10,9 @@
 ## 概述
 
 该项目旨在用于一个专属开发者的学习资源共享平台，聊天论坛。
+
 **客户端界面演示**
+
 ![image](https://github.com/user-attachments/assets/dceeb9e8-ffef-4ac6-8a38-11a86b498ed7)
 
 
