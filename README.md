@@ -30,7 +30,7 @@
 
 ##### 环境要求
 
-jdk1.8+springboot2以上
+需要jdk1.8+springboot2
 
 ##### 前置要求
 
