@@ -252,32 +252,20 @@ const api = {
 
 const logoInfo = ref([
   {
-    letter: "E",
+    letter: "知",
     color: "#3285FF",
   },
   {
-    letter: "a",
+    letter: "享",
     color: "#FB3624",
   },
   {
-    letter: "s",
+    letter: "乐",
     color: "#FFBA02",
   },
   {
-    letter: "y",
-    color: "#3285FF",
-  },
-  {
-    letter: "b",
+    letter: "园",
     color: "#25B24E",
-  },
-  {
-    letter: "b",
-    color: "#FD3224",
-  },
-  {
-    letter: "s",
-    color: "#FFBA02",
   },
 ]);
 
