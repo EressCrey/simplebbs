@@ -49,3 +49,26 @@ npm install
 npm run dev
 ```
 
+## 修改前端logo
+在前端src/views/Layout.vue文件中修改以下代码
+```js
+const logoInfo = ref([
+  {
+    letter: "知",
+    color: "#3285FF",
+  },
+  {
+    letter: "享",
+    color: "#FB3624",
+  },
+  {
+    letter: "乐",
+    color: "#FFBA02",
+  },
+  {
+    letter: "园",
+    color: "#25B24E",
+  },
+]);
+```
+
