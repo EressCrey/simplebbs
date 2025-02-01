@@ -5,7 +5,7 @@
  Source Server Type    : MySQL
  Source Server Version : 50719 (5.7.19)
  Source Host           : localhost:3306
- Source Schema         : kkbbs
+ Source Schema         : easybbs
 
  Target Server Type    : MySQL
  Target Server Version : 50719 (5.7.19)

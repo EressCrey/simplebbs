@@ -4,9 +4,9 @@
     <modelVersion>4.0.0</modelVersion>
     <packaging>pom</packaging>
     <modules>
-        <module>kkbbs-common</module>
-        <module>kkbbs-web</module>
-        <module>kkbbs-admin</module>
+        <module>easybbs-common</module>
+        <module>easybbs-web</module>
+        <module>easybbs-admin</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -14,11 +14,11 @@
         <version>2.6.1</version>
         <relativePath/>
     </parent>
-    <groupId>com.kkbbs</groupId>
-    <artifactId>kkbbs-java</artifactId>
+    <groupId>com.easybbs</groupId>
+    <artifactId>easybbs-java</artifactId>
     <version>1.0</version>
-    <name>kkbbs</name>
-    <description>kkbbs</description>
+    <name>easybbs</name>
+    <description>easybbs</description>
     <properties>
         <java.version>1.8</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
