@@ -27,6 +27,10 @@ public class EasybbsAdminApplication {
         SpringApplication.run(EasybbsAdminApplication.class, args);
     }
 
+    /**
+     * 管理端启动类
+     * @return
+     */
     @Bean
     @DependsOn({"applicationContextProvider"})
     MultipartConfigElement multipartConfigElement() {
