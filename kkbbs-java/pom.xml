@@ -4,9 +4,9 @@
     <modelVersion>4.0.0</modelVersion>
     <packaging>pom</packaging>
     <modules>
-        <module>easybbs-common</module>
-        <module>easybbs-web</module>
-        <module>easybbs-admin</module>
+        <module>kkbbs-common</module>
+        <module>kkbbs-web</module>
+        <module>kkbbs-admin</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>

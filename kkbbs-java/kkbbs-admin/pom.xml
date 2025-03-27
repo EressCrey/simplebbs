@@ -10,25 +10,24 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.easybbs</groupId>
-    <artifactId>easybbs-web</artifactId>
+    <artifactId>kkbbs-admin</artifactId>
     <version>1.0</version>
 
-    <name>easybbs-web</name>
-    <description>easybbs-web</description>
+    <name>easybbs-admin</name>
+    <description>easybbs-admin</description>
+
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
         <java.version>1.8</java.version>
     </properties>
 
-
     <dependencies>
         <dependency>
             <groupId>com.easybbs</groupId>
-            <artifactId>easybbs-common</artifactId>
+            <artifactId>kkbbs-common</artifactId>
             <version>1.0</version>
         </dependency>
-
     </dependencies>
 
     <build>
@@ -47,9 +46,10 @@
                     </execution>
                 </executions>
                 <configuration>
-                    <mainClass>com.easybbs.EasybbsWebApplication</mainClass>
+                    <mainClass>com.easybbs.EasybbsAdminApplication</mainClass>
                 </configuration>
             </plugin>
         </plugins>
     </build>
+
 </project>
