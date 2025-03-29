@@ -37,6 +37,10 @@
 ##### 前置要求
 
 导入kkbbs.sql
+#### 配置
+修改properties文件配置
+![image](https://github.com/user-attachments/assets/846a9e75-ec9a-4f20-a627-11f05d9b0e9c)
+
 
 #### 前端
 
