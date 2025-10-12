@@ -63,6 +63,9 @@ public class OperationAspect {
     @Resource
     private UserInfoService userInfoService;
 
+    /**
+     * 所有 @GlobalInterceptor 的都会拦截
+     */
     @Pointcut("@annotation(com.easybbs.annotation.GlobalInterceptor)")
     private void requestInterceptor() {
     }
@@ -198,7 +201,7 @@ public class OperationAspect {
         session.setAttribute(sessionKey, count + 1);
     }
 
-    //校验登录
+    //校验登录 从session中获取
     private void checkLogin() {
         HttpServletRequest request = ((ServletRequestAttributes) RequestContextHolder.getRequestAttributes()).getRequest();
         HttpSession session = request.getSession();
@@ -239,8 +242,8 @@ public class OperationAspect {
             //基本数据类型
             if (TYPE_STRING.equals(parameter.getParameterizedType().getTypeName()) || TYPE_LONG.equals(parameter.getParameterizedType().getTypeName()) || TYPE_INTEGER.equals(parameter.getParameterizedType().getTypeName())) {
                 checkValue(value, verifyParam);
-                //如果传递的是对象
             } else {
+                //如果传递的是对象 则检测对象中属性是否有注解
                 checkObjValue(parameter, value);
             }
         }
@@ -271,10 +274,6 @@ public class OperationAspect {
 
     /**
      * 校验参数
-     *
-     * @param value
-     * @param verifyParam
-     * @throws BusinessException
      */
     private void checkValue(Object value, VerifyParam verifyParam) throws BusinessException {
         Boolean isEmpty = value == null || StringTools.isEmpty(value.toString());

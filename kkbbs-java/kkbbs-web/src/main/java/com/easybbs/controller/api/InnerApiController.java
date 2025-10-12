@@ -14,9 +14,12 @@ import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;
 
+/**
+ *
+ */
 @RestController
 @RequestMapping("/innerApi")
-public class InnnerApiController extends BaseController {
+public class InnerApiController extends BaseController {
 
     @Resource
     private WebConfig webConfig;
