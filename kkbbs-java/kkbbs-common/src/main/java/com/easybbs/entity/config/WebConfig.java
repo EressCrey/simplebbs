@@ -5,6 +5,8 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class WebConfig extends AppConfig {
+
+
     @Value("${admin.emails:}")
     private String adminEmails;
 

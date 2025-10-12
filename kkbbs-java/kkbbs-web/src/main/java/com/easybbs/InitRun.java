@@ -12,6 +12,9 @@ import org.springframework.stereotype.Component;
 import javax.annotation.Resource;
 import java.io.File;
 
+/**
+ * 项目启动后加载配置
+ */
 @Component
 public class InitRun implements ApplicationRunner {
     private static final Logger logger = LoggerFactory.getLogger(InitRun.class);
@@ -25,12 +28,13 @@ public class InitRun implements ApplicationRunner {
 
     @Override
     public void run(ApplicationArguments args) throws Exception {
+        // 默认头像的加载
         File projectFile = new File(appConfig.getProjectFolder());
         if (!projectFile.exists()) {
             logger.info("配置文件中项目路径" + appConfig.getProjectFolder() + "不存在");
             return;
         }
-        //创建好头像目录，方便防止默认头像
+        // 默认头像路径 如果没有就创建 之后再去拿
         String avatarFolderName = Constants.FILE_FOLDER_FILE + Constants.FILE_FOLDER_AVATAR_NAME;
 
         File avatarFolder = new File(appConfig.getProjectFolder() + avatarFolderName);
