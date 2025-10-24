@@ -10,7 +10,9 @@ import com.easybbs.utils.CopyTools;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
-
+/**
+ * 默认方法
+ */
 public class BaseController {
 
 

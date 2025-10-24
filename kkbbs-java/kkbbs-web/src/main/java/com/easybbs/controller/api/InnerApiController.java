@@ -27,6 +27,9 @@ public class InnerApiController extends BaseController {
     @Resource
     private SysSettingService sysSettingService;
 
+    /**
+     * 刷新系统设置
+     */
     @RequestMapping("/refresSysSetting")
     @GlobalInterceptor(checkParams = true)
     public ResponseVO refresSysSetting(@VerifyParam(required = true) String appKey,

@@ -36,6 +36,9 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * 论坛文章
+ */
 @RestController
 @RequestMapping("/forum")
 public class ForumArticleController extends BaseController {
@@ -114,6 +117,16 @@ public class ForumArticleController extends BaseController {
         PaginationResultVO resultVO = forumArticleService.findListByPage(articleQuery);
         return getSuccessResponseVO(convert2PaginationVO(resultVO, ForumArticleVO.class));
     }
+
+    /**
+     * 热榜
+     * @param session
+     * @param boardId
+     * @param pBoardId
+     * @param orderType
+     * @param pageNo
+     * @return
+     */
     @RequestMapping("/collection")
     public ResponseVO collection(HttpSession session, Integer boardId, Integer pBoardId, Integer orderType, Integer pageNo) {
         ForumArticleQuery articleQuery = new ForumArticleQuery();

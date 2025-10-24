@@ -83,6 +83,11 @@ public class FileController extends BaseController {
         }
     }
 
+    /**
+     * 头像
+     * @param response
+     * @param userId 用户Id
+     */
     @RequestMapping("/getAvatar/{userId}")
     @GlobalInterceptor(checkLogin = false, checkParams = true)
     public void getAvatar(HttpServletResponse response, @VerifyParam(required = true) @PathVariable("userId") String userId) {
@@ -91,6 +96,7 @@ public class FileController extends BaseController {
         File file = new File(avatarPath);
         String imageFolder = Constants.FILE_FOLDER_AVATAR_NAME;
         String imageName = userId + Constants.AVATAR_SUFFIX;
+        // 用户没有设置投降的时候用默认头像
         if (!file.exists()) {
             imageName = Constants.AVATAR_DEFUALT;
             if (!new File(webConfig.getProjectFolder() + avatarFolderName + Constants.AVATAR_DEFUALT).exists()) {
